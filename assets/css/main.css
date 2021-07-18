@@ -576,7 +576,28 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
-
+	.sent_status .good {
+		border:  1px solid #1AEDA0;
+		padding:  5px 1rem;
+		border-radius: 4px;
+		display: none;
+	}
+	.sent_status .bad {
+		border:  1px solid #FF665A;
+		padding:  5px 1rem;
+		border-radius: 4px;
+		display: none;
+	}
+	.sent_status .loading {
+		display: none;
+		justify-content: center;
+	}
+	.sent_status .loading img {
+		height: 40px;
+	}
+	.sent_status .loading.--active {
+		display: flex;
+	}
 /* Box */
 
 	.box {
@@ -1140,9 +1161,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1155,7 +1179,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg-blue.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1293,6 +1317,7 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			display: none;
 		}
 
 			#header .logo .icon:before {
@@ -1305,6 +1330,10 @@ input, select, textarea {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
+			margin-top: 0;
+		}
+		#header .content:before {
+			display: none;
 		}
 
 			#header .content .inner {
@@ -1325,7 +1354,7 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-			#header .content p {
+			#header .content p, #header .content span {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
@@ -1432,10 +1461,10 @@ input, select, textarea {
 				margin-top: 2rem;
 			}
 
-				#header > *:before {
-					top: calc(-2rem - 1px);
-					height: calc(2rem + 1px);
-				}
+			#header > *:before {
+				top: calc(-2rem - 1px);
+				height: calc(2rem + 1px);
+			}
 
 			#header .logo {
 				width: 4.75rem;
@@ -1543,7 +1572,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(27, 31, 34, 0.75);
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1656,3 +1685,5 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
