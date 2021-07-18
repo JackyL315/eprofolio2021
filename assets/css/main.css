@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1336,31 +1331,31 @@ input, select, textarea {
 			display: none;
 		}
 
-			#header .content .inner {
-				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				padding: 3rem 2rem;
-				max-height: 40rem;
-				overflow: hidden;
+		#header .content .inner {
+			-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+			-moz-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			-ms-transition-delay: 0.25s;
+			transition-delay: 0.25s;
+			padding: 3rem 2rem;
+			max-height: 40rem;
+			overflow: hidden;
+		}
+
+			#header .content .inner > :last-child {
+				margin-bottom: 0;
 			}
 
-				#header .content .inner > :last-child {
-					margin-bottom: 0;
-				}
-
-			#header .content p, #header .content span {
-				text-transform: uppercase;
-				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
-				line-height: 2;
-			}
-
+		#header .content p, #header .content span {
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+			font-size: 0.8rem;
+			line-height: 2;
+		}
+		
 		#header nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -1687,3 +1682,19 @@ input, select, textarea {
 		}
 
 
+.contact_btn {
+	display: block;
+	min-width:  7.5rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	padding:  0 1.25rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-size:  0.8rem;
+	border:  1px solid rgba(255,255,255,0.8) !important;
+	border-radius: 4px;
+	text-align: center;
+}
+.contact_btn:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+}
