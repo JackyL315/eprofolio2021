@@ -35,6 +35,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$body.addClass('is-ready')
 				// Nav.
 				// Add "middle" alignment classes if we're dealing with an even number of items.
 				var $nav = $header.children('nav'),
