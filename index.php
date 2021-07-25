@@ -4,7 +4,6 @@
 	<?php include 'blocks/global/header.php'?>
 	<!-- Main -->
 	<div id="main">
-
 		<!-- Intro -->
 			<?php include 'blocks/intro.php'?>
 		<!-- Work -->
@@ -17,10 +16,8 @@
 			<?php include 'blocks/resume.php'?>
 		<!-- Elements -->
 			<?php include 'blocks/element.php'?>
-
 	</div>
 	<?php include 'blocks/global/footer.php'?>
-
 </div>
 <div id="bg"></div>
 <?php include 'sections/footer.php'?>
