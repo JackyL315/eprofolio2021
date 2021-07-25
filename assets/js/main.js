@@ -30,7 +30,11 @@
 			$("#footer").load("blocks/global/footer.html");  
 		
 			
-			setTimeout(function(){
+		}); 
+	// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
 				// Nav.
 				// Add "middle" alignment classes if we're dealing with an even number of items.
 				var $nav = $header.children('nav'),
@@ -59,12 +63,6 @@
 						});
 
 				});
-			},100)
-		}); 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
 			}, 100);
 		});
 
